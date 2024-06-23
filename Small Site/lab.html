@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Front of Lab</title>
+    <script>
+        function verifyCode() {
+            const code = document.getElementById('codeInput').value;
+            const correctCode = '1978-00153-001';
+            if (code === correctCode) {
+                window.location.href = 'inside-lab.html'; 
+            } else {
+                alert('Incorrect code. Please standby and security will be with you shortly to escort you into our detainment center.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="pics/lab.webp" alt="Front of lab">
+    <br>
+    <h1 style="color: rgb(133, 8, 8);">Enter your employee id</h1>
+    <input type="text" id="codeInput" placeholder="Enter code here">
+    <button onclick="verifyCode()">Submit</button>
+
+</body>
+<br>
+<a href="index.html"> Return to map </a>
+

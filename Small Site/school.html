@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<!-- Brandon Laster -->
+<link rel="stylesheet" href="styles.css">
+<script>
+    function verifyweapon() {
+        const code = document.getElementById('codeInput').value;
+        const correctCode = 'fire';
+        if (code === correctCode) {
+            alert('You got away this time, I would not try coming back here..'); 
+        } else {
+            alert('You died, better luck next time...');
+        }
+    }
+</script>
+
+</head>
+
+<body>
+    <img src="pics/school.jpg" alt="school">
+    <h1>You open the doors to the school and are met by a horrific monster, what do you use to injure it and get away?
+        
+    </h1>
+    <input type="text" id="codeInput" placeholder="Enter">
+    <button onclick="verifyweapon()">Submit</button>
+
+
+    
+</body>
+<br>
+<a href="index.html"> Return to map </a>
